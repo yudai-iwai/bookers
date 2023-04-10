@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+<html>
  <head>
    <title>WebCampBackendNew</title>
  </head>
  
  <body>
- 　<p id="notice">Book was successfully created.</p>
- 　<p>
+   <p id="notice"></p>
+   <p>
  　 <strong>Title:</strong>
  　 <%= @book.title %>
  　</p>
@@ -13,8 +14,9 @@
  　 <strong>Body:</strong>
  　 <%= @book.body %>
  　</p>
-   <p>Edit</p>
-   "|"
-   <p>Baack</p>
+   <a>Edit</a>|
+   <a>
+    <%= link_to "Back","/books" %>
+   </a>
  </body>
- 
+</html>
