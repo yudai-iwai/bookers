@@ -1,9 +1,4 @@
-<!DOCTYPE html>
 <html>
- <head>
-   <title>WebCampBackendNew</title>
- </head>
- 
  <body>
    <p id="notice"></p>
    <p>
@@ -14,7 +9,9 @@
  　 <strong>Body:</strong>
  　 <%= @book.body %>
  　</p>
-   <a>Edit</a>|
+   <a>
+    <%= link_to "Edit","/books/#{@book.id}/edit" %>
+   </a>|
    <a>
     <%= link_to "Back","/books" %>
    </a>
