@@ -29,10 +29,6 @@ p,ol,ul,td{
   margin: 33px;
 }
 
-a:-webkit-any-link{
-  cursor: pointer;
-  text-decoration: underline;
-}
 #notice{
   color: green;
 }
@@ -60,4 +56,22 @@ a:-webkit-any-link{
 #error_explanation ul li{
   font-size: 12px;
   list-style: square;
+}
+
+th{
+  padding-bottom: 5px;
+}
+
+td{
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.field, .actions{
+  margin-bottom: 10px;
+}
+
+label{
+  display: block
 }

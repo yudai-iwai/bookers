@@ -3,19 +3,17 @@
    <p id="notice">
     <%= flash[:notice] %>
    </p>
-   <p>
+   <div>
  　 <strong>Title:</strong>
  　 <%= @book.title %>
- 　</p>
- 　<p>
+ 　</div>
+ 　<div>
  　 <strong>Body:</strong>
  　 <%= @book.body %>
- 　</p>
-   <a>
-    <%= link_to "Edit",edit_book_path(@book[:id]) %>
-   </a>|
-   <a>
+ 　 </div>
+   <p>
+    <%= link_to "Edit",edit_book_path(@book.id) %> |
     <%= link_to "Back","/books" %>
-   </a>
+   </p>
  </body>
 </html>

@@ -28,10 +28,8 @@
   </div>
  <% end %>
  
- <a>
-  <%= link_to "Show",book_path(@book[:id]) %>
- </a>|
- <a>
+ <p>
+  <%= link_to "Show",book_path(@book.id) %> |
   <%= link_to "Back","/books" %>
- </a>
+ </p>
 </body>
